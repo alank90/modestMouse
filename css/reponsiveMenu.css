@@ -1,3 +1,9 @@
+/*On large screens, we hide the label. */
+label {
+  position: absolute;
+  left: 0;
+  display: none;
+}
 
 /* small screens */
 @media screen and (max-width: 44em) {
