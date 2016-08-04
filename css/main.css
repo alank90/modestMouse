@@ -1,0 +1,529 @@
+/*! HTML5 Boilerplate v5.0 | MIT License | http://h5bp.com/ */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+
+/* =========================================================
+================  My Custom Styles =========================
+========================================================= */
+
+
+/* ==============================
+ ==== Main Body Styling =========
+================================*/
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    font-size: 16px;
+    font-family: lato, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+#wrap {
+    min-height: 100%;
+    background: #c9f1ec;
+}
+
+main {
+    margin-bottom: 80px;  /*For #bottom_footer to lineup with page bottom*/
+}
+
+div .mainLeftPicture {
+    margin-top: 2px;
+    margin-bottom: 4%;
+    position: relative;
+    width: 100%;  /* for IE 6 */
+}
+
+.mainLeftPicture h2 {
+    position: absolute;
+    top: 10%;;
+    left: 5%;
+    width: auto;
+    height: auto;
+}
+
+.mainLeftPicture h2 span {
+    font: 48px/56px 'El Messiri', Sans-Serif;
+    font-weight: 900;
+    letter-spacing: -1px;
+    text-shadow: -2px 0 #d43900, 0 1px #d43900, 3px 0 #d43900, 0 -1px #d43900;
+    padding: 10px;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+img.bottom {
+    position: relative;
+    left: 0;
+    top: 5%;
+    opacity: 0;
+    z-index: -1;
+}
+
+img.top {
+    position: absolute;
+    left: 0;
+    top: 5%;
+}
+
+span.slideIndicator {
+    display: inline-block;
+    position: relative;
+    left: 65%;
+    font-size: 3em;
+    color: #292929;
+    text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+}
+
+p {
+    margin-bottom: 0;
+    font-family: 'El Messiri', sans-serif;
+    line-height: 1.1em;
+}
+
+
+/*This indents the first line of only those paragraphs that follow another paragraph. It also suppresses space below all paragraphs and above indented paragraphs.*/
+
+p + p {
+    text-indent: 1.5em;
+    margin-top: 0
+}
+
+
+/* ==============================
+===== Navbar Styling ============
+===============================*/
+
+nav {
+    background: #47AA9D;
+    background: linear-gradient(top, #47AA9D 0%, #bbbbbb 100%);
+    background: -moz-linear-gradient(top, #47AA9D 0%, #bbbbbb 100%);
+    background: -webkit-linear-gradient(top, #47AA9D 0%, #bbbbbb 100%);
+    box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.15);
+    padding: 35px;
+}
+
+nav span {
+    font-size: 64px;
+    font-family: 'Permanent Marker', serif;
+}
+
+nav ul {
+    font-size: 16px;
+    font-weight: 700;
+    font-style: normal;
+    list-style: none;
+    position: relative;
+    display: inline-table;
+    margin-left: 25%;
+}
+
+   nav ul:after {
+      content: "";
+      clear: both;
+      display: block;
+   }
+
+nav ul ul {
+    display: none;
+    border-radius: 0px;
+    padding: 0;
+    position: absolute;
+    top: 100%;
+    font-size: 15px;
+}
+
+nav ul li {
+    float: left;
+    z-index: 1;
+}
+
+   nav ul li a {
+     display: block;
+     padding: 15px 20px;
+     color: #000;
+     text-decoration: none;
+     font-family: 'Permanent Marker', serif;
+     font-size: 17px;
+   }
+
+       nav ul li a:hover {
+         background: #2a5547;
+         border-radius: 25px;
+         border: 3px solid #7EE4D6;
+       }
+
+       nav ul li ul a {
+         font-size: 14px;
+         color: #fff;
+         border-radius: 25px;
+         background: #2a5547;
+         max-width: 75%;
+       }
+
+   nav ul li:hover > ul {
+       display: block;
+   }
+
+nav ul ul li {
+       float: none;
+       position: relative;
+       right: 60%;
+}
+
+nav.gradient {
+    background-image: radial-gradient( circle, #47AA9D, #005555);
+}
+
+
+/* ============================
+=== End Navbar Stylings ======
+============================= */
+
+
+/* ============================
+=== Aside Stylings ======
+============================= */
+
+aside .hidden{
+    display: none;
+}
+
+#begining h4 {
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+
+aside h3 {
+    font-size: 32px;
+    font-family: 'Permanent Marker', serif;
+    margin-left: 25px;
+}
+
+div aside .col-4 {
+   max-height: 640px;
+   overflow: auto;
+}
+
+
+/* ==============================
+=== End of Aside Stylings =======
+============================== */
+
+
+/* ============================
+======Styling for Footer ======
+==============================*/
+
+#bottom_footer {
+    height: 80px;
+    margin-top: -80px; /* negative value of footer height. Important! Must adjust margin-bottom of directly above element(s) to match height of footer. */
+    background-color: #C9421B;
+
+}
+
+h4 {
+    margin-left: 5%;
+    font-family: 'El Messiri', sans-serif;
+    font-size: 28px;
+    margin-top: 5px;
+}
+
+#footer_menu i:hover:before {
+    font-size: 36px;
+}
+
+ul#footer_menu {
+    list-style-type: none;
+    margin-left: 40%;
+    width: 100%;
+}
+
+#footer_menu li {
+    display: inline-block;
+    margin: 5px 20px;
+}
+
+#footer_menu i {
+    max-height: 30px;
+    max-width: 30px;
+/* position:absolute prevents other icons from moving on hover */
+}
+
+footer.gradient {
+    background-image: radial-gradient( circle, #C9421B, #C9421B);
+}
+
+footer.quotation {
+    margin-top: 1%;
+    margin-left:55%;
+    font-weight: 600;
+    font-style: italic;
+}
+
+blockquote {
+    font-family: 'El Messiri', sans-serif;
+    max-height: 80px;
+    border-left: 10px solid #e65722;
+    margin: 1.5em ;
+    padding: 0.5em 10px;
+    quotes: "\201C""\201D""\2018""\2019";
+}
+
+   blockquote:before {
+      color: #050709;
+      content: open-quote;
+      font-size: 3.5em;
+      line-height: 0.1em;
+      margin-right: 0.25em;
+      vertical-align: -0.4em;
+   }
+
+   blockquote:after {
+      color: #050709;
+      content: close-quote;
+      font-size: 3em;
+      line-height: 0.1em;
+      margin-left: 23em;
+      vertical-align: text-top;
+   }
+
+   blockquote p {
+      display: inline;
+      font-size: 15px;
+   }
+
+
+/* ==========================================================================
+   Media Queries Here
+   ========================================================================== */
+ @media all and (max-width: 500px)  {
+     #picture_title  {
+        font-size: .5em;
+     }
+}
+
+
+/*Responsive Styles for Navbar*/
+
+@media screen and (max-width : 760px){
+	/*Make dropdown links appear inline*/
+	nav ul ul {
+		position: static;
+		display: none;
+	}
+	/*Create vertical spacing*/
+	li {
+		margin-bottom: 1px;
+	}
+	/*Make all menu links full width*/
+	ul li, ul li ul {
+        width: 100%;
+	}
+
+    /* Make footer icons inline */
+    footer.gradient ul li {
+       display: inline;
+       width: auto;
+    }
+
+    #footer_menu i {
+       margin-top: 60px;
+    }
+
+    blockquote:after  {
+        margin-left: 94%;
+    }
+
+}
+
+@media screen and (min-width : 761px) and (max-width : 1163px){
+	/*Make dropdown links appear inline*/
+	nav ul ul {
+		position: static;
+		display: none;
+        max-width: 250px;
+	}
+  /* Control Main UL Width */
+    nav ul li a:hover  {
+        max-width: 50%;
+    }
+	/*Create vertical spacing*/
+	li {
+		margin-bottom: 1px;
+	}
+    /*Make all menu links full width*/
+	ul li, ul li ul{
+		width: 100%;
+	}
+}
+
+@media print,
+(-o-min-device-pixel-ratio: 5/4),
+(-webkit-min-device-pixel-ratio: 1.25),
+(min-resolution: 120dpi) {}
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+    thead {
+        display: table-header-group;
+    }
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
+
+
+
+
+
+
