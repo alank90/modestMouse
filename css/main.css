@@ -196,7 +196,7 @@ nav ul li {
     z-index: 1;
 }
     /* Hide hamburger on Large Screen. */
-    .icon {
+    #openmenu {
         display: none;
     }
 
@@ -369,8 +369,16 @@ blockquote {
 /*Responsive Styles for Navbar*/
 
     @media screen and (max-width: 760px) {
-    /*    CSS Rules for Responsive Navbar*/
-    .sidenav {
+    /* CSS Rules for Responsive Navbar */
+      /* Show Hamburger menu on Small screen. */
+    #openmenu {
+        display: inline-block;
+        font-size: 30px;
+        cursor: pointer;
+        margin-right: 25px;
+    }
+
+   .sidenav {
         height: 100%;
         width: 0;
         position: fixed;
@@ -429,11 +437,7 @@ blockquote {
         display: block;
         margin-left: -25px;
     }
-    #openmenu {
-        float: right;
-        font-size: 30px;
-        cursor: pointer;
-    }
+
     @media screen and (max-height: 450px) {
         .sidenav {
             padding-top: 15px;
@@ -443,26 +447,31 @@ blockquote {
         }
     }
 
-
+/*@media screen and (min-width : 761px) and (max-width : 1163px){
+	Make dropdown links appear inline
+	nav ul ul {
+		position: static;
+		display: none;
+        max-width: 250px;
+	}*/
+  /* Control Main UL Width */
+    /*nav ul li a:hover  {
+        max-width: 50%;
+    }*/
+	/*Create vertical spacing*/
+	/*li {
+		margin-bottom: 1px;
+	}*/
+    /*Make all menu links full width*/
+	/*ul li, ul li ul{
+		width: 100%;
+	}
+}*/
 
   /* End of Responsive Navbar CSS ======================================================================= */
 
 
-	/*Make dropdown links appear inline
-	nav ul ul {
-		position: static;
-		display: none;
-	}*/
-	/*Create vertical spacing*/
-	/*li {
-		margin-bottom: 1px;
-	}
-	Make all menu links full width
-	ul li, ul li ul {
-        width: 100%;
-	}*/
-
-    /* Make footer icons inline */
+  /* Make footer icons inline */
     footer.gradient ul li {
        display: inline;
        width: auto;
@@ -478,26 +487,7 @@ blockquote {
 
 }
 
-@media screen and (min-width : 761px) and (max-width : 1163px){
-	/*Make dropdown links appear inline*/
-	nav ul ul {
-		position: static;
-		display: none;
-        max-width: 250px;
-	}
-  /* Control Main UL Width */
-    nav ul li a:hover  {
-        max-width: 50%;
-    }
-	/*Create vertical spacing*/
-	li {
-		margin-bottom: 1px;
-	}
-    /*Make all menu links full width*/
-	ul li, ul li ul{
-		width: 100%;
-	}
-}
+
 
 @media print,
 (-o-min-device-pixel-ratio: 5/4),
