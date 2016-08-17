@@ -186,27 +186,29 @@ nav ul ul {
     display: none;
     border-radius: 0px;
     padding: 0;
-    position: absolute;
-    top: 100%;
     font-size: 15px;
 }
 
 nav ul li {
+    width: 6.5rem;
     float: left;
     z-index: 1;
 }
-    /* Hide hamburger on Large Screen. */
+    /* Hide hamburger & close menu icon on Large Screen. */
     #openmenu {
+        display: none;
+    }
+    #closemenu  {
         display: none;
     }
 
    nav ul li a {
      display: block;
-     padding: 15px 20px;
+     padding: 15px 15px;
      color: #000;
      text-decoration: none;
      font-family: 'Permanent Marker', serif;
-     font-size: 17px;
+     font-size: 15px;
    }
 
        nav ul li a:hover {
@@ -215,23 +217,21 @@ nav ul li {
          border: 3px solid #7EE4D6;
        }
 
+      nav ul li:hover > ul {
+         display: block;
+         width: 9.5em;
+      }
+
        nav ul li ul a {
          font-size: 14px;
          color: #fff;
          border-radius: 25px;
          background: #2a5547;
-         max-width: 75%;
+         max-width: 100%;
        }
 
-   nav ul li:hover > ul {
-       display: block;
-   }
 
-nav ul ul li {
-       float: none;
-       position: relative;
-       right: 60%;
-}
+
 
 nav.gradient {
     background-image: radial-gradient( circle, #47AA9D, #005555);
@@ -368,14 +368,18 @@ blockquote {
 
 /*Responsive Styles for Navbar*/
 
-    @media screen and (max-width: 760px) {
+    @media screen and (max-width: 1245px) {
     /* CSS Rules for Responsive Navbar */
       /* Show Hamburger menu on Small screen. */
     #openmenu {
         display: inline-block;
+        position: absolute;
+        top: 0;
+        right: 0;
         font-size: 30px;
         cursor: pointer;
-        margin-right: 25px;
+        margin-top: 45px;
+        margin-right: 30px;
     }
 
    .sidenav {
