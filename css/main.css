@@ -164,6 +164,7 @@ nav {
 nav span {
     font-size: 64px;
     font-family: 'Permanent Marker', serif;
+    transition: font-size 2s;
 }
 
  /* Hide hamburger & close menu icon on Large Screen. */
@@ -221,6 +222,9 @@ nav ul li {
       nav ul li:hover > ul {
          display: block;
          width: 9.5em;
+         position: absolute;
+         z-index: 1;
+         margin: 0;
       }
 
        nav ul li ul a {
@@ -362,6 +366,9 @@ blockquote {
      #picture_title  {
         font-size: .5em;
      }
+     nav span {
+       font-size: 32px;
+     }
 }
 
 
@@ -431,15 +438,16 @@ blockquote {
         transition: margin-right 0.5s;
         padding: 16px;
     }
-    ul {
+    nav ul {
         list-style-type: none;
     }
-    ul ul {
+    nav ul ul {
         display: none;
     }
     /* Display submenus on hover */
-    ul li:hover > ul {
+    nav ul li:hover > ul {
         display: block;
+        position:static;
         margin-left: -25px;
     }
 
