@@ -166,6 +166,14 @@ nav span {
     font-family: 'Permanent Marker', serif;
 }
 
+ /* Hide hamburger & close menu icon on Large Screen. */
+#openmenu {
+ display: none;
+}
+#closemenu  {
+  display: none;
+}
+
 nav ul {
     font-size: 16px;
     font-weight: 700;
@@ -186,7 +194,7 @@ nav ul ul {
     display: none;
     border-radius: 0px;
     padding: 0;
-    font-size: 15px;
+    font-size: 13px;
 }
 
 nav ul li {
@@ -194,13 +202,6 @@ nav ul li {
     float: left;
     z-index: 1;
 }
-    /* Hide hamburger & close menu icon on Large Screen. */
-    #openmenu {
-        display: none;
-    }
-    #closemenu  {
-        display: none;
-    }
 
    nav ul li a {
      display: block;
@@ -229,8 +230,6 @@ nav ul li {
          background: #2a5547;
          max-width: 100%;
        }
-
-
 
 
 nav.gradient {
@@ -366,7 +365,9 @@ blockquote {
 }
 
 
-/*Responsive Styles for Navbar*/
+/* ===============================
+== Responsive Styles for Navbar ==
+=================================*/
 
     @media screen and (max-width: 1245px) {
     /* CSS Rules for Responsive Navbar */
@@ -408,10 +409,10 @@ blockquote {
     }
     .sidenav .closebtn {
         position: absolute;
-        top: 2px;
+        top: 15px;
         right: 15px;
-        width: 25px;
-        height: 25px;
+        width: 35px;
+        height: 35px;
         padding-top: -5px;
         text-align: center;
         vertical-align: middle;
