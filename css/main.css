@@ -199,9 +199,10 @@ nav ul ul {
 }
 
 nav ul li {
-    width: 6.5rem;
+/*    width: 6.5rem;*/
     float: left;
     z-index: 1;
+    margin-bottom: 5px;
 }
 
    nav ul li a {
@@ -211,6 +212,7 @@ nav ul li {
      text-decoration: none;
      font-family: 'Permanent Marker', serif;
      font-size: 15px;
+     margin-bottom: 3px;
    }
 
        nav ul li a:hover {
@@ -397,41 +399,42 @@ blockquote {
         z-index: 1;
         top: 0;
         right: 0;
-        background-color: #111;
         overflow-x: hidden;
         transition: 0.5s;
         padding-top: 60px;
+        background-color: #085F5D;
     }
     .sidenav a {
         padding: 5px;
         text-decoration: none;
         font-size: 25px;
-        color: #818181;
+        color: #95e0ed;
         display: block;
         transition: 0.3s
     }
     .sidenav a:hover,
     .offcanvas a:focus {
-        color: #f1f1f1;
+        color: #42b9be;
     }
     .sidenav .closebtn {
         position: absolute;
         top: 15px;
         right: 15px;
-        width: 35px;
-        height: 35px;
+        width: 45px;
+        height: 45px;
         padding-top: -5px;
         text-align: center;
         vertical-align: middle;
-        line-height: 25px;
+        line-height: 30px;
         /* the same as your div height for centering the X */
-        border: 2px solid #fff;
+        color: #080808;
+        border: 2px solid #15ffdb;
         border-radius: 50%;
         font-size: 36px;
         margin-left: 50px;
     }
     .sidenav .closebtn:hover {
-        border-color: #818181;
+        border-color: #18edff;
         transform: rotateY(180deg);
     }
     #main {
