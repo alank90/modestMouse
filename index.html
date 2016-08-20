@@ -85,7 +85,12 @@
         <div class="col-8">
             <figure class="mainLeftPicture"> <img class="bottom" src="img/blank.png" alt="Blank Image here">
                 <!-- To stop reflow when slide is redrawn  --><img class="top" id="photo" src="/img/modest_mouse_left.jpg" alt="Modest Mouse In Concert">
-                <h2><span id="picture_title">Modest Mouse Live at The Fillmore, Miami</span></h2> <span class="slideIndicator">&bull;</span> <span class="slideIndicator">&bull;</span> <span class="slideIndicator">&bull;</span> <span class="slideIndicator">&bull;</span> </figure>
+                <h2><span id="picture_title">Modest Mouse Live at The Fillmore, Miami</span></h2>
+                <span class="slideIndicator">&bull;</span>
+                <span class="slideIndicator">&bull;</span>
+                <span class="slideIndicator">&bull;</span>
+                <span class="slideIndicator">&bull;</span>
+            </figure>
         </div>
         <aside>
             <div class="col-4" id="asideTour" value="asideTour">
@@ -176,17 +181,27 @@
                 document.getElementById("openmenu").addEventListener("click", openNav); document.getElementById("closemenu").addEventListener("click", closeNav);
 
                 function openNav() {
+                    window.clearTimeout(stopShowID);
                     document.getElementById("mySidenav").style.width = "250px";
                     document.getElementById("main").style.marginRight = "250px";
+                    document.getElementsByTagName("aside")[0].classname = "col-12";
                     document.getElementById("openmenu").style.display= "none";
                     document.getElementById("closemenu").style.display= "inline-block";
+                    // The getElementsByClassName() method returns a collection of all elements in the document with the specified class name, as a NodeList object.
+                    var leftPicture = document.getElementsByClassName("mainLeftPicture")[0];
+                    leftPicture.style.display = "none";
                 }
 
                 function closeNav() {
+                    changeSlide();
                     document.getElementById("mySidenav").style.width = "0";
                     document.getElementById("main").style.marginRight = "0";
+                    document.getElementsByTagName("aside")[0].classname = "";
                     document.getElementById("openmenu").style.display= "block";
                     document.getElementById("closemenu").style.display= "none";
+                    var leftPicture = document.getElementsByClassName("mainLeftPicture")[0];
+                    leftPicture.style.display = "block";
+
                 }
 
             // Event Handler for Menu items swapped Out/In of aside element

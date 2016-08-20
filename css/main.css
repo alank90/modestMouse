@@ -82,11 +82,12 @@ main {
     margin-bottom: 80px;  /*For #bottom_footer to lineup with page bottom*/
 }
 
-div .mainLeftPicture {
+.mainLeftPicture {
     margin-top: 2px;
     margin-bottom: 4%;
     position: relative;
     width: 100%;  /* for IE 6 */
+    height: 100%;
 }
 
 .mainLeftPicture h2 {
@@ -94,15 +95,16 @@ div .mainLeftPicture {
     top: 10%;;
     left: 5%;
     width: auto;
-    height: auto;
+    height: inherit;
 }
 
-.mainLeftPicture h2 span {
+#picture_title {
     font: 48px/56px 'El Messiri', Sans-Serif;
     font-weight: 900;
     letter-spacing: -1px;
     text-shadow: -2px 0 #d43900, 0 1px #d43900, 3px 0 #d43900, 0 -1px #d43900;
     padding: 10px;
+    height: auto;
 }
 
 img {
@@ -444,6 +446,11 @@ blockquote {
     nav ul {
         list-style-type: none;
     }
+
+        nav ul li  {
+            float: none;
+        }
+
     nav ul ul {
         display: none;
     }
