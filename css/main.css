@@ -380,7 +380,7 @@ blockquote {
 == Responsive Styles for Navbar ==
 =================================*/
 
-    @media screen and (max-width: 1245px) {
+    @media screen and (max-width: 1000px) {
     /* CSS Rules for Responsive Navbar */
       /* Show Hamburger menu on Small screen. */
     #openmenu {

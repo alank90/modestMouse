@@ -92,7 +92,7 @@
                 <span class="slideIndicator">&bull;</span>
             </figure>
         </div>
-        <aside>
+        <aside id="test">
             <div class="col-4" id="asideTour" value="asideTour">
                 <h3> Tour Dates </h3>
                 <figure> <img src="img/modest_mouse_tour_aside.jpg" alt="Tour_Dates"> </figure>
@@ -179,19 +179,32 @@
             $(document).ready(function () {
               /* JS to Open and Close Responsive Menu */
                 document.getElementById("openmenu").addEventListener("click", openNav); document.getElementById("closemenu").addEventListener("click", closeNav);
+                var mq = window.matchMedia( "(max-width: 1000px)" );
 
                 function openNav() {
-                    window.clearTimeout(stopShowID);
-                    document.getElementById("mySidenav").style.width = "250px";
-                    document.getElementById("main").style.marginRight = "250px";
-                    document.getElementsByTagName("aside")[0].classname = "col-12";
-                    document.getElementById("openmenu").style.display= "none";
-                    document.getElementById("closemenu").style.display= "inline-block";
-                    // The getElementsByClassName() method returns a collection of all elements in the document with the specified class name, as a NodeList object.
-                    var leftPicture = document.getElementsByClassName("mainLeftPicture")[0];
-                    leftPicture.style.display = "none";
+                    if (mq.matches) {
+                      // window width is less than 1000px
+                      window.clearTimeout(stopShowID);
+                      document.getElementById("mySidenav").style.width = "250px";
+                      document.getElementById("main").style.marginRight = "250px";
+                      document.getElementsByTagName("aside")[0].classname = "col-12";
+                      document.getElementById("test").style.width = "100%";
+                      document.getElementById("openmenu").style.display= "none";
+                      document.getElementById("closemenu").style.display= "inline-block";
+                      // The getElementsByClassName() method returns a collection of all elements in the document with the specified class name, as a NodeList object.
+                      var leftPicture = document.getElementsByClassName("mainLeftPicture")[0];
+                      leftPicture.style.display = "none";
+                    }
+                    else {
+                      // window width is more than 1000px. Don't hide Slideshow element
+                       window.clearTimeout(stopShowID);
+                       document.getElementById("mySidenav").style.width = "250px";
+                       document.getElementById("main").style.marginRight = "250px";
+                       document.getElementsByTagName("aside")[0].classname = "col-12";
+                       document.getElementById("openmenu").style.display= "none";
+                       document.getElementById("closemenu").style.display= "inline-block";
+                    }
                 }
-
                 function closeNav() {
                     changeSlide();
                     document.getElementById("mySidenav").style.width = "0";
