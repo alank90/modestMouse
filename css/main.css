@@ -470,27 +470,6 @@ blockquote {
         }
     }
 
-/*@media screen and (min-width : 761px) and (max-width : 1163px){
-	Make dropdown links appear inline
-	nav ul ul {
-		position: static;
-		display: none;
-        max-width: 250px;
-	}*/
-  /* Control Main UL Width */
-    /*nav ul li a:hover  {
-        max-width: 50%;
-    }*/
-	/*Create vertical spacing*/
-	/*li {
-		margin-bottom: 1px;
-	}*/
-    /*Make all menu links full width*/
-	/*ul li, ul li ul{
-		width: 100%;
-	}
-}*/
-
   /* End of Responsive Navbar CSS ======================================================================= */
 
 
