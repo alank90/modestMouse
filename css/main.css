@@ -171,8 +171,10 @@ nav span {
 
  /* Hide hamburger & close menu icon on Large Screen. */
 #openmenu {
- display: none;
+  display: none;
 }
+
+
 #closemenu  {
   display: none;
 }
@@ -379,6 +381,15 @@ blockquote {
 /* ===============================
 == Responsive Styles for Navbar ==
 =================================*/
+
+/*We need this media rule cause JS writes inline style when called in openNav function.
+This is how we can override the inine rule if client decides to shrink and expand window
+after opening menu...*/
+   @media screen and (min-width: 1000px) {
+     #openmenu[style] {
+        display:none !important;
+     }
+   }
 
     @media screen and (max-width: 1000px) {
     /* CSS Rules for Responsive Navbar */
