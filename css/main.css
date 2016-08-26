@@ -86,7 +86,7 @@ main {
 }
 
 .mainLeftPicture {
-    margin-top: 2px;
+    margin-top: .2rem;
     margin-bottom: 4%;
     position: relative;
     width: 100%;  /* for IE 6 */
@@ -170,7 +170,7 @@ nav {
 nav span {
     font-size: 6.4rem;
     font-family: 'Permanent Marker', serif;
-    transition: font-size 2s;
+    transition: font-size 1.2s;
 }
 
  /* Hide hamburger & close menu icon on Large Screen. */
@@ -191,6 +191,7 @@ nav ul {
     position: relative;
     display: inline-table;
     margin-left: 20%;
+    transition: all 0.5s ease;
 }
 
    nav ul:after {
@@ -201,7 +202,7 @@ nav ul {
 
 nav ul ul {
     display: none;
-    border-radius: 0px;
+    border-radius: 0;
     padding: 0;
     font-size: 1.3rem;
 }
@@ -209,7 +210,8 @@ nav ul ul {
 nav ul li {
     float: left;
     z-index: 1;
-    margin-bottom: 5px;
+    margin-bottom: .5rem;
+    transition: all 0.5s ease;
 }
 
    nav ul li a {
@@ -219,6 +221,7 @@ nav ul li {
      text-decoration: none;
      font-family: 'Permanent Marker', serif;
      margin-bottom: 3px;
+     transition: all 0.5s ease;
    }
 
        nav ul li a:hover {
@@ -233,7 +236,7 @@ nav ul li {
          position: absolute;
          z-index: 1;
          margin: 0;
-      }
+     }
 
        nav ul li ul a {
          font-size: 1.4rem;
@@ -264,7 +267,7 @@ aside .hidden{
 
 #begining h4 {
     font-weight: 600;
-    margin-bottom: 4px;
+    margin-bottom: .4rem;
 }
 
 aside h3 {
@@ -274,8 +277,8 @@ aside h3 {
 }
 
 div aside .col-4 {
-   max-height: 640px;
-   overflow: auto;
+   max-height: 66rem;
+   overflow: hidden;
 }
 
 
@@ -290,7 +293,7 @@ div aside .col-4 {
 
 #bottom_footer {
     height: 80px;
-    margin-top: -80px; /* negative value of footer height. Important! Must adjust margin-bottom of directly above element(s) to match height of footer. */
+    margin-top: -8rem; /* negative value of footer height. Important! Must adjust margin-bottom of directly above element(s) to match height of footer. */
     background-color: #C9421B;
 
 }
@@ -299,7 +302,7 @@ h4 {
     margin-left: 5%;
     font-family: 'El Messiri', sans-serif;
     font-size: 2.8rem;
-    margin-top: 5px;
+    margin-top: .5rem;
 }
 
 #footer_menu i:hover:before {
@@ -314,7 +317,7 @@ ul#footer_menu {
 
 #footer_menu li {
     display: inline-block;
-    margin: 5px 20px;
+    margin: .5rem 2rem;
 }
 
 #footer_menu i {
@@ -330,6 +333,7 @@ footer.gradient {
 footer.quotation {
     margin-top: 1%;
     margin-left:55%;
+    font-size: 1.4rem;
     font-weight: 600;
     font-style: italic;
 }
@@ -346,10 +350,10 @@ blockquote {
    blockquote:before {
       color: #050709;
       content: open-quote;
-      font-size: 3.5em;
+      font-size: 4.5em;
       line-height: 0.1em;
-      margin-right: 0.25em;
-      vertical-align: -0.4em;
+      margin-right: 0.25rem;
+      vertical-align: -1.1rem;
    }
 
    blockquote:after {
@@ -357,7 +361,7 @@ blockquote {
       content: close-quote;
       font-size: 3rem;
       line-height: 0.1rem;
-      margin-left: 23rem;
+      margin-left: 65%;
       vertical-align: text-top;
    }
 
@@ -376,9 +380,10 @@ blockquote {
      }
      nav span {
        font-size: 3.2rem;
+
      }
      #mySidenav  {
-       max-width: 150px;
+       max-width: 15rem;
      }
      nav ul  {
        margin-top: 4.7rem;
@@ -409,8 +414,8 @@ after opening menu...*/
         right: 0;
         font-size: 3rem;
         cursor: pointer;
-        margin-top: 45px;
-        margin-right: 30px;
+        margin-top: 4.5rem;
+        margin-right: 3rem;
     }
 
    .sidenav {
@@ -422,16 +427,17 @@ after opening menu...*/
         right: 0;
         overflow-x: hidden;
         transition: 0.5s;
-        padding-top: 60px;
+        padding-top: 6rem;
         background-color: #085F5D;
+        transition: all 0.5s ease;
     }
     .sidenav a {
-        padding: 5px;
+        padding: .5rem;
         text-decoration: none;
         font-size: 1.5rem;
         color: #95e0ed;
         display: block;
-        transition: 0.3s
+        transition: all 0.3s
     }
     .sidenav a:hover,
     .offcanvas a:focus {
@@ -441,12 +447,12 @@ after opening menu...*/
         position: absolute;
         top: 15px;
         right: 15px;
-        width: 45px;
-        height: 45px;
-        padding-top: -5px;
+        width: 4.5rem;
+        height: 4.5rem;
+        padding-top: -.5rem;
         text-align: center;
         vertical-align: middle;
-        line-height: 30px;
+        line-height: 3rem;
         /* the same as your div height for centering the X */
         color: #080808;
         border: 2px solid #15ffdb;
@@ -478,12 +484,12 @@ after opening menu...*/
     nav ul li:hover > ul {
         display: block;
         position:static;
-        margin-left: -25px;
+        margin-left: -2.5rem;
     }
 
     @media screen and (max-height: 450px) {
         .sidenav {
-            padding-top: 15px;
+            padding-top: 1.5rem;
         }
         .sidenav a {
             font-size: 1.1rem;
@@ -616,6 +622,10 @@ after opening menu...*/
         page-break-after: avoid;
     }
 }
+
+
+
+
 
 
 
