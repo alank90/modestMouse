@@ -139,10 +139,10 @@ span.slideIndicator {
 }
 
 p {
-    font-size: 1.2rem;
+    font-size: 1.9rem;
     margin-bottom: 0;
     font-family: 'El Messiri', sans-serif;
-    line-height: 1.1rem;
+    line-height: 2.1rem;
 }
 
 
@@ -207,7 +207,6 @@ nav ul ul {
 }
 
 nav ul li {
-/*    width: 6.5rem;*/
     float: left;
     z-index: 1;
     margin-bottom: 5px;
@@ -219,7 +218,6 @@ nav ul li {
      color: #000;
      text-decoration: none;
      font-family: 'Permanent Marker', serif;
-     font-size: 1.6rem;
      margin-bottom: 3px;
    }
 
@@ -238,7 +236,7 @@ nav ul li {
       }
 
        nav ul li ul a {
-         font-size: 1rem;
+         font-size: 1.4rem;
          color: #fff;
          border-radius: 25px;
          background: #2a5547;
@@ -382,6 +380,9 @@ blockquote {
      #mySidenav  {
        max-width: 150px;
      }
+     nav ul  {
+       margin-top: 4.7rem;
+     }
 }
 
 
@@ -427,7 +428,7 @@ after opening menu...*/
     .sidenav a {
         padding: 5px;
         text-decoration: none;
-        font-size: 1.1rem;
+        font-size: 1.5rem;
         color: #95e0ed;
         display: block;
         transition: 0.3s
@@ -450,8 +451,8 @@ after opening menu...*/
         color: #080808;
         border: 2px solid #15ffdb;
         border-radius: 50%;
-        font-size: 36px;
-        margin-left: 50px;
+        font-size: 3.6rem;
+        margin-left: 5rem;
     }
     .sidenav .closebtn:hover {
         border-color: #18edff;
@@ -472,6 +473,7 @@ after opening menu...*/
     nav ul ul {
         display: none;
     }
+
     /* Display submenus on hover */
     nav ul li:hover > ul {
         display: block;
