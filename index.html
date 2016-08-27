@@ -83,8 +83,10 @@
 				===================================================== -->
     <div class="row">
         <div class="col-8">
-            <figure class="mainLeftPicture"> <img class="bottom" src="img/blank.png" alt="Blank Image here">
-                <!-- To stop reflow when slide is redrawn  --><img class="top" id="photo" src="/img/modest_mouse_left.jpg" alt="Modest Mouse In Concert">
+            <figure class="mainLeftPicture">
+                <img class="bottom" src="img/blank.png" alt="Blank Image here">
+                <!-- To stop reflow when slide is redrawn  -->
+                <img class="top" id="photo" src="img/modest_mouse_left.jpg" alt="Modest Mouse In Concert">
                 <h2><span id="picture_title">Modest Mouse Live at The Fillmore, Miami</span></h2>
                 <span class="slideIndicator">&bull;</span>
                 <span class="slideIndicator">&bull;</span>
@@ -266,11 +268,11 @@
                 function changeSlide() {
                     stopShowID = window.setTimeout(function () {
                         newPic = aSlideShowPics[i];
-                        $("#photo, #picture_title").hide({
-                            duration: 700,
+                        $("#photo, #picture_title").fadeOut({
+                            duration: 2000,
                             complete: function() {
                                 $("#photo").attr("src", newPic);
-                                $("#photo, #picture_title").show("700");
+                                $("#photo, #picture_title").fadeIn(3000);
                             }
                         });
 
@@ -297,7 +299,7 @@
                             i = 0; // reset loop to keep slideshow going
                             changeSlide(); // Recursive call on loop end
                         }
-                    }, 5000)
+                    }, 10000)
                 }
                 changeSlide();
             }); // end document.ready

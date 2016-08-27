@@ -149,7 +149,7 @@ p {
 /*This indents the first line of only those paragraphs that follow another paragraph. It also suppresses space below all paragraphs and above indented paragraphs.*/
 
 p + p {
-    text-indent: 1.5em;
+    text-indent: 1.5rem;
     margin-top: 0
 }
 
@@ -191,7 +191,7 @@ nav ul {
     position: relative;
     display: inline-table;
     margin-left: 20%;
-    transition: all 0.5s ease;
+    width: 50rem;
 }
 
    nav ul:after {
@@ -211,23 +211,22 @@ nav ul li {
     float: left;
     z-index: 1;
     margin-bottom: .5rem;
-    transition: all 0.5s ease;
 }
 
    nav ul li a {
      display: inline-block;
-     padding: 15px 15px;
+     padding: 1.5rem 1.5rem;
      color: #000;
      text-decoration: none;
      font-family: 'Permanent Marker', serif;
      margin-bottom: 3px;
-     transition: all 0.5s ease;
+     transition: all 0.3s ease;
    }
 
        nav ul li a:hover {
          background: #2a5547;
-         border-radius: 25px;
-         border: 3px solid #7EE4D6;
+         border-radius: 2.5rem;
+         border: .3rem solid #7EE4D6;
        }
 
       nav ul li:hover > ul {
@@ -241,7 +240,7 @@ nav ul li {
        nav ul li ul a {
          font-size: 1.4rem;
          color: #fff;
-         border-radius: 25px;
+         border-radius: 2.5rem;
          background: #2a5547;
          max-width: 100%;
        }
@@ -278,7 +277,7 @@ aside h3 {
 
 div aside .col-4 {
    max-height: 66rem;
-   overflow: hidden;
+   overflow: auto;
 }
 
 
@@ -376,10 +375,11 @@ blockquote {
    ========================================================================== */
  @media all and (max-width: 500px)  {
      #picture_title  {
-        font-size: .5rem;
+        font-size: 1.5rem;
      }
      nav span {
        font-size: 3.2rem;
+        width: auto;
 
      }
      #mySidenav  {
@@ -400,7 +400,13 @@ This is how we can override the inine rule if client decides to shrink and expan
 after opening menu...*/
    @media screen and (min-width: 1000px) {
      #openmenu[style] {
-        display:none !important;
+        display: none !important;
+     }
+     #closemenu[style]  {
+        display: none !important;
+     }
+     .mainLeftPicture[style]  {
+        display: block !important;
      }
    }
 
@@ -437,6 +443,7 @@ after opening menu...*/
         font-size: 1.5rem;
         color: #95e0ed;
         display: block;
+        max-width: 12rem;
         transition: all 0.3s
     }
     .sidenav a:hover,
@@ -465,7 +472,7 @@ after opening menu...*/
         transform: rotateY(180deg);
     }
     #main {
-        transition: margin-right 0.5s;
+        transition: margin-right .5s;
         padding: 16px;
     }
     nav ul {
