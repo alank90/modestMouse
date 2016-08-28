@@ -379,14 +379,12 @@ blockquote {
      }
      nav span {
        font-size: 3.2rem;
-        width: auto;
-
      }
      #mySidenav  {
-       max-width: 15rem;
+         border-bottom-left-radius: 1rem;
      }
-     nav ul  {
-       margin-top: 4.7rem;
+     nav > div > div  {
+         margin-left: -4.5rem;
      }
 }
 
@@ -425,7 +423,7 @@ after opening menu...*/
     }
 
    .sidenav {
-        height: 100%;
+        height: auto;
         width: 0;
         position: fixed;
         z-index: 1;
@@ -435,6 +433,7 @@ after opening menu...*/
         transition: 0.5s;
         padding-top: 6rem;
         background-color: #085F5D;
+         border-bottom-left-radius: 1rem;
         transition: all 0.5s ease;
     }
     .sidenav a {
@@ -452,8 +451,8 @@ after opening menu...*/
     }
     .sidenav .closebtn {
         position: absolute;
-        top: 15px;
-        right: 15px;
+        top: 1.5rem;
+        right: 3rem;
         width: 4.5rem;
         height: 4.5rem;
         padding-top: -.5rem;
