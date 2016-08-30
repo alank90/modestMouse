@@ -387,8 +387,11 @@ blockquote {
      nav > div > div  {
          margin-left: -4.5rem;
      }
+     /*Modernizr checks for touch capability and adds the .touchevents class if
+     device has capability. Then add this kludge because I cant figure why I
+     have the margin on right side on mobile devices only.*/
      .touchevents #mySidenav  {
-         margin-right: 9rem;
+         margin-right: 10.5rem;
      }
 }
 
