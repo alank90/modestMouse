@@ -387,6 +387,9 @@ blockquote {
      nav > div > div  {
          margin-left: -4.5rem;
      }
+     .touchevents #mySidenav  {
+         margin-right: 9rem;
+     }
 }
 
 
