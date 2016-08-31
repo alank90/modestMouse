@@ -63,7 +63,6 @@ textarea {
 
 html  {
   font-size: 62.5%; /* font-size 1em = 10px. 62.5% rule */
-  overflow-x: hidden;
 }
 
 html,
@@ -312,7 +311,8 @@ h4 {
 ul#footer_menu {
     list-style-type: none;
     margin-left: 40%;
-    width: 100%;
+    max-width: 50vw; /*Control width of footer. It extends past viewport without width. */
+    height: auto;
 }
 
 #footer_menu li {
@@ -389,10 +389,12 @@ blockquote {
      }
      /*Modernizr checks for touch capability and adds the .touchevents class if
      device has capability. Then add this kludge because I cant figure why I
-     have the margin on right side on mobile devices only.*/
+     have the margin on right side on mobile devices only. Update: Figured
+     out problem. Footer width was extending past viewport.
      .touchevents #mySidenav  {
          margin-right: 10.5rem;
      }
+     */
 }
 
 
